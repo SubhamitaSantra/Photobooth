@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photobooth</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Photobooth!</h1>
+        
+        <!-- Camera View -->
+        <div class="camera">
+            <video id="video" width="100%" height="auto" autoplay></video>
+        </div>
+        
+        <!-- Capture Button -->
+        <button id="snapButton">Click Picture</button>
+        
+        <!-- Canvas (hidden) for capturing image -->
+        <canvas id="canvas" style="display:none;"></canvas>
+        
+        <!-- Display Captured Image -->
+        <div id="result">
+            <img id="photo" src="" alt="Captured Photo">
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
